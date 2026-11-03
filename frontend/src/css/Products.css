@@ -1,0 +1,30 @@
+.product {
+
+background:white;
+padding:20px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 5px 15px #ddd;
+
+}
+
+
+.product img {
+
+width:100%;
+height:250px;
+object-fit:cover;
+
+}
+
+
+.product button {
+
+margin-top:15px;
+padding:10px 20px;
+background:#b8860b;
+color:white;
+border:none;
+border-radius:5px;
+
+}

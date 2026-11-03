@@ -1,0 +1,23 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+.admin-main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .admin-main-content {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,166 @@
+.avp-container {
+    max-width: 1400px;
+}
+
+.avp-header {
+    min-height: 140px;
+    padding: 32px 40px;
+    margin-bottom: 28px;
+}
+
+.avp-header h1 {
+    font-size: clamp(28px, 3vw, 40px);
+}
+
+.avp-card {
+    min-height: 0;
+    max-width: 980px;
+    padding: 34px 40px;
+}
+
+.avp-card-heading {
+    margin-bottom: 26px;
+}
+
+.avp-card-heading h2 {
+    margin: 0 0 10px;
+    color: #bd5c34;
+    font-size: 25px;
+}
+
+.avp-card-heading p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.avp-form {
+    display: grid;
+    grid-template-columns: minmax(150px, 220px) minmax(0, 1fr);
+    align-items: center;
+    gap: 16px 20px;
+}
+
+.avp-form label {
+    color: #30291f;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.avp-form input,
+.avp-form select {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 13px;
+    border: 1px solid #d8c8b5;
+    border-radius: 8px;
+    background: #fff;
+    color: #30291f;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.avp-form input:focus,
+.avp-form select:focus {
+    outline: 3px solid rgba(189, 92, 52, 0.16);
+    border-color: #bd5c34;
+}
+
+.avp-form select:disabled {
+    background: #f4f1ed;
+    color: #82796e;
+    cursor: not-allowed;
+}
+
+.avp-field-note {
+    grid-column: 2;
+    margin: -8px 0 0;
+    color: #82796e;
+    font-size: 13px;
+}
+
+.avp-form-actions {
+    grid-column: 2;
+    padding-top: 8px;
+}
+
+.avp-submit {
+    min-height: 46px;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 9px;
+    background: #bd5c34;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.avp-submit:hover:not(:disabled) {
+    background: #a94d2a;
+    transform: translateY(-1px);
+}
+
+.avp-submit:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.avp-message,
+.avp-state {
+    margin: 0 0 22px;
+    padding: 13px 16px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.avp-message-success {
+    border-color: #b6dfc2;
+    background: #edf8f0;
+    color: #246b3b;
+}
+
+.avp-message-error {
+    border-color: #f0c4c0;
+    background: #fff1ef;
+    color: #a32d27;
+}
+
+.avp-state {
+    border-color: #ead8cf;
+    background: #fbf8f5;
+    color: #665b4f;
+}
+
+@media (max-width: 650px) {
+    .avp-header {
+        min-height: 0;
+        padding: 26px 24px;
+    }
+
+    .avp-card {
+        padding: 25px 22px;
+    }
+
+    .avp-form {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 9px;
+    }
+
+    .avp-form label:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .avp-field-note,
+    .avp-form-actions {
+        grid-column: 1;
+    }
+
+    .avp-submit {
+        width: 100%;
+    }
+}

@@ -1,0 +1,258 @@
+/* =========================
+   Contact Page
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #faf8f3;
+}
+
+
+/* =========================
+   Main Contact Section
+========================= */
+
+.contact-main {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: stretch;
+
+  gap: 50px;
+
+  padding: 60px;
+}
+
+
+/* =========================
+   LEFT SIDE - MAP
+========================= */
+
+.map-section {
+  width: 55%;
+}
+
+.map-section h2 {
+  color: #222;
+
+  margin-bottom: 20px;
+
+  font-size: 36px;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 500px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  display: block;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   RIGHT SIDE - CONTENT
+========================= */
+
+.contact-info {
+  width: 45%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 35px;
+
+  padding: 20px 30px;
+}
+
+
+/* =========================
+   Contact Box
+========================= */
+
+.footer-box {
+  width: 100%;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer-box h2 {
+  color: #222;
+
+  margin-bottom: 20px;
+
+  font-size: 32px;
+}
+
+.footer-box p {
+  color: #555;
+
+  line-height: 1.8;
+
+  font-size: 18px;
+
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   Social Media
+========================= */
+
+.social-icons {
+  display: flex;
+
+  gap: 20px;
+
+  margin-top: 20px;
+}
+
+.social-icons a {
+  width: 55px;
+  height: 55px;
+
+  background: #7a7600;
+
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 28px;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #ffd700;
+
+  color: black;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   Copyright
+========================= */
+
+.copyright {
+  width: 100%;
+
+  background: #5f5b00;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 18px;
+
+  font-size: 16px;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+
+  .contact-main {
+    flex-direction: column;
+
+    padding: 40px 30px;
+
+    gap: 40px;
+  }
+
+  .map-section {
+    width: 100%;
+  }
+
+  .map-section iframe {
+    height: 450px;
+  }
+
+  .contact-info {
+    width: 100%;
+
+    padding: 0;
+  }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+  .contact-main {
+    padding: 30px 15px;
+  }
+
+  .map-section h2 {
+    font-size: 28px;
+  }
+
+  .map-section iframe {
+    height: 350px;
+  }
+
+  .footer-box {
+    padding: 25px;
+  }
+
+  .footer-box h2 {
+    font-size: 26px;
+  }
+
+  .footer-box p {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    gap: 12px;
+  }
+
+  .social-icons a {
+    width: 48px;
+    height: 48px;
+
+    font-size: 23px;
+  }
+
+  
+
+}

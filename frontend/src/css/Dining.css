@@ -1,0 +1,195 @@
+.dining-section {
+
+  margin-left: 270px;
+
+  width: calc(100% - 270px);
+
+  min-height: 100vh;
+
+  padding: 70px 60px;
+
+  background: #f8f8f8;
+
+}
+
+/* Heading */
+
+.dining-section h2 {
+
+  text-align: center;
+
+  font-size: 42px;
+
+  color: #222;
+
+  margin-bottom: 50px;
+
+}
+
+/* Product Grid */
+
+.dining-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 35px;
+
+}
+
+/* Card */
+
+.dining-card {
+
+  background: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+
+  transition: .3s;
+
+}
+
+.dining-card:hover {
+
+  transform: translateY(-10px);
+
+}
+
+/* Image */
+
+.dining-card img {
+
+  width: 100%;
+
+  height: 260px;
+
+  object-fit: cover;
+
+}
+
+/* Details */
+
+.dining-details {
+
+  padding: 20px;
+
+}
+
+.dining-details h3 {
+
+  font-size: 22px;
+
+  color: #333;
+
+}
+
+/* Information */
+
+.info {
+
+  color: #666;
+
+  line-height: 1.5;
+
+  font-size: 15px;
+
+}
+
+/* Discount */
+
+.discount {
+
+  display: inline-block;
+
+  background: #d4af37;
+
+  color: white;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  margin: 10px 0;
+
+  font-size: 14px;
+
+}
+
+/* Price */
+
+.price {
+
+  margin: 15px 0;
+
+}
+
+.new-price {
+
+  font-size: 25px;
+
+  font-weight: bold;
+
+  color: #b8860b;
+
+}
+
+.old-price {
+
+  margin-left: 15px;
+
+  text-decoration: line-through;
+
+  color: #888;
+
+}
+
+/* Button */
+
+.dining-details button {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #222;
+
+  color: white;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+}
+
+.dining-details button:hover {
+
+  background: #d4af37;
+
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+  .dining-section {
+
+    margin-left: 0;
+
+    width: 100%;
+
+    padding: 40px 20px;
+
+  }
+
+}

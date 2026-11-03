@@ -1,0 +1,17 @@
+.features {
+
+margin-left:250px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+padding:60px;
+background:white;
+text-align:center;
+
+}
+
+
+.features h3 {
+
+margin-top:15px;
+
+}

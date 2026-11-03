@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.admin-dashboard {
+    min-height: 100vh;
+    background: #f8f8f8;
+    display: flex;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.admin-sidebar {
+
+    width: 317px;
+    min-height: 100vh;
+
+    background: #151515;
+    color: white;
+
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    padding: 55px 25px;
+
+    overflow-y: auto;
+
+}
+
+
+.admin-logo {
+
+    font-size: 30px;
+    font-weight: 600;
+
+    padding: 0 15px 30px;
+
+    color: #171717;
+}
+
+
+.admin-sidebar-line {
+
+    height: 1px;
+    background: #aaa;
+
+    margin-bottom: 55px;
+}
+
+
+.admin-title {
+
+    color: #c15f35;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+}
+
+
+.admin-sidebar-link {
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 0;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.admin-sidebar-link span:first-child {
+
+    width: 35px;
+
+    text-align: center;
+
+    font-size: 22px;
+
+}
+
+
+.admin-sidebar-link:hover {
+
+    color: #c15f35;
+
+}
+
+
+.vendor-main {
+
+    position: relative;
+
+}
+
+
+.vendor-text {
+
+    flex: 1;
+}
+
+
+.vendor-arrow {
+
+    font-size: 13px !important;
+}
+
+
+/* =========================
+   VENDOR SUBMENU
+========================= */
+
+.vendor-submenu {
+
+    margin-left: 30px;
+
+    border-left: 2px solid #555;
+
+    padding-left: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.vendor-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 5px;
+
+    color: #eee;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+}
+
+
+.vendor-link:hover {
+
+    color: #c15f35;
+
+}
+
+
+.vendor-link.active {
+
+    color: #c15f35;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.admin-main {
+
+    margin-left: 317px;
+
+    width: calc(100% - 317px);
+
+    min-height: 100vh;
+
+    padding: 48px;
+
+}
+
+
+.dashboard-container {
+
+    width: 100%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header {
+
+    background: white;
+
+    border: 1px solid #ead8cf;
+
+    border-radius: 28px;
+
+    padding: 50px 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 55px;
+
+}
+
+
+.welcome-small {
+
+    color: #c15f35;
+
+    font-size: 22px;
+
+    letter-spacing: 4px;
+
+    font-weight: 700;
+
+    margin: 0 0 15px;
+}
+
+
+.dashboard-header h1 {
+
+    font-size: 48px;
+
+    margin: 0;
+
+    color: #171717;
+}
+
+
+.dashboard-logout {
+
+    border: none;
+
+    background: #bd5c34;
+
+    color: white;
+
+    padding: 18px 38px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.dashboard-logout:hover {
+
+    background: #a94d2a;
+
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.dashboard-content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+}
+
+
+.dashboard-card {
+
+    background: white;
+
+    border: 1px solid #ead8cf;
+
+    border-radius: 28px;
+
+    padding: 50px;
+
+    min-height: 340px;
+
+}
+
+
+.dashboard-card h2 {
+
+    color: #bd5c34;
+
+    font-size: 30px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.dashboard-card h3 {
+
+    font-size: 40px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.dashboard-card p {
+
+    font-size: 20px;
+
+    color: #555;
+
+    margin: 18px 0;
+
+}
+
+
+.dashboard-loading {
+
+    padding: 50px;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .admin-sidebar {
+
+        width: 240px;
+
+    }
+
+    .admin-main {
+
+        margin-left: 240px;
+
+        width: calc(100% - 240px);
+
+        padding: 25px;
+
+    }
+
+    .dashboard-content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .admin-sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+        min-height: auto;
+
+    }
+
+    .admin-dashboard {
+
+        display: block;
+
+    }
+
+    .admin-main {
+
+        margin-left: 0;
+
+        width: 100%;
+
+    }
+
+}

@@ -1,0 +1,533 @@
+/* =========================================
+   DASHBOARD PAGE
+========================================= */
+
+.dashboard-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: #f8f5ef;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   LEFT SIDEBAR
+========================================= */
+
+.dashboard-sidebar {
+    width: 270px;
+    min-width: 270px;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: #ffffff;
+
+    border-right: 1px solid #e5ddd2;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 20px;
+
+    box-sizing: border-box;
+
+    z-index: 1000;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.sidebar-logo {
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #171717;
+
+    padding: 10px 10px 30px;
+
+    border-bottom: 1px solid #eee5db;
+}
+
+
+/* =========================================
+   USER INFORMATION
+========================================= */
+
+.sidebar-user {
+    text-align: center;
+
+    padding: 25px 10px;
+}
+
+
+.user-circle {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 12px;
+
+    border-radius: 50%;
+
+    background: #bb6038;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+.sidebar-user h3 {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #222;
+}
+
+
+.sidebar-user p {
+    margin-top: 6px;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* =========================================
+   SIDEBAR MENU
+========================================= */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    color: #555;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+
+.sidebar-link span {
+    width: 22px;
+
+    font-size: 18px;
+
+    text-align: center;
+}
+
+
+.sidebar-link:hover {
+    background: #f6eee8;
+
+    color: #bb6038;
+}
+
+
+.sidebar-link.active {
+    background: #bb6038;
+
+    color: white;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SIDEBAR BOTTOM
+========================================= */
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+
+.sidebar-logout {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #bb6038;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.sidebar-logout span {
+    margin-right: 10px;
+}
+
+
+.sidebar-logout:hover {
+    background: #9f4e2e;
+}
+
+
+/* =========================================
+   MAIN DASHBOARD CONTENT
+========================================= */
+
+.dashboard-main {
+    margin-left: 270px;
+
+    width: calc(100% - 270px);
+
+    min-height: 100vh;
+
+    box-sizing: border-box;
+
+    padding: 55px 50px;
+}
+
+
+/* =========================================
+   DASHBOARD CONTAINER
+========================================= */
+
+.dashboard-container {
+    width: 100%;
+
+    max-width: 1600px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   DASHBOARD HEADER
+========================================= */
+
+.dashboard-header {
+    width: 100%;
+
+    min-height: 170px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4d9ce;
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 30px rgba(50, 35, 20, 0.07);
+
+    padding: 35px 48px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 44px;
+}
+
+
+/* =========================================
+   WELCOME TEXT
+========================================= */
+
+.welcome-small {
+    margin: 0 0 12px;
+
+    color: #bb6038;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.dashboard-header h1 {
+    margin: 0;
+
+    color: #161616;
+
+    font-size: 40px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   HEADER LOGOUT
+========================================= */
+
+.dashboard-logout {
+    border: none;
+
+    background: #bb6038;
+
+    color: white;
+
+    padding: 16px 42px;
+
+    border-radius: 9px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.dashboard-logout:hover {
+    background: #9f4e2e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   DASHBOARD CARDS
+========================================= */
+
+.dashboard-content {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 35px;
+}
+
+
+.dashboard-card {
+    min-height: 310px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4d9ce;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 12px 30px rgba(50, 35, 20, 0.07);
+}
+
+
+.dashboard-card h2 {
+    margin: 0 0 32px;
+
+    color: #bb6038;
+
+    font-size: 29px;
+
+    font-weight: 700;
+}
+
+
+.dashboard-card h3 {
+    margin: 0 0 24px;
+
+    color: #151515;
+
+    font-size: 34px;
+}
+
+
+.dashboard-card p {
+    margin: 0 0 18px;
+
+    color: #555;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   BROWSE FURNITURE BUTTON
+========================================= */
+
+.browse-furniture-btn {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 13px 24px;
+
+    background: #bb6038;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.browse-furniture-btn:hover {
+    background: #9f4e2e;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.dashboard-loading {
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f8f5ef;
+}
+
+
+.dashboard-loading h2 {
+    color: #bb6038;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .dashboard-sidebar {
+        width: 230px;
+        min-width: 230px;
+    }
+
+
+    .dashboard-main {
+        margin-left: 230px;
+
+        width: calc(100% - 230px);
+
+        padding: 35px 25px;
+    }
+
+
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .dashboard-sidebar {
+        width: 210px;
+        min-width: 210px;
+
+        padding: 20px 12px;
+    }
+
+
+    .sidebar-logo {
+        font-size: 22px;
+    }
+
+
+    .dashboard-main {
+        margin-left: 210px;
+
+        width: calc(100% - 210px);
+
+        padding: 25px 15px;
+    }
+
+
+    .dashboard-header {
+        padding: 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    .dashboard-header h1 {
+        font-size: 32px;
+    }
+
+
+    .dashboard-logout {
+        width: 100%;
+    }
+
+
+    .dashboard-card {
+        padding: 28px;
+    }
+
+}

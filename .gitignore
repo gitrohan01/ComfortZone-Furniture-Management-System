@@ -1,0 +1,39 @@
+# Local demo database, credentials, private payment files, and launcher logs
+/backend/.demo-data/
+
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Django
+*.sqlite3
+db.sqlite3
+.env
+.env.*
+!.env.example
+media/
+staticfiles/
+
+# Demo data and private credentials
+backend/.demo-data/
+backend/test-private-payment-files/
+DEMO_CREDENTIALS.txt
+
+# Node
+node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

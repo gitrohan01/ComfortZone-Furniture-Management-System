@@ -1,0 +1,249 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-page {
+    width: 100%;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8f5ef,
+            #eee5d8
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px;
+}
+
+
+/* =========================================
+   LOGIN CONTAINER
+========================================= */
+
+.login-container {
+    width: 100%;
+
+    max-width: 450px;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+
+    border: 1px solid rgba(184, 134, 11, 0.08);
+
+    text-align: center;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.login-container h1 {
+    font-size: 34px;
+
+    color: #222;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.login-container > p:first-of-type {
+    color: #777;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.login-container form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.login-container input {
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid #d7d1c8;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #333;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.login-container input::placeholder {
+    color: #999;
+}
+
+
+.login-container input:focus {
+    border-color: #b8860b;
+
+    box-shadow:
+        0 0 0 3px rgba(184, 134, 11, 0.12);
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-container button {
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #b8860b;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.login-container button:hover {
+    background: #967009;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(150, 112, 9, 0.25);
+}
+
+
+/* =========================================
+   LOGIN ERROR / SUCCESS MESSAGE
+========================================= */
+
+.login-message {
+    margin-top: 18px;
+
+    color: #c0392b;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   REGISTER LINK
+========================================= */
+
+.login-container .register-link {
+    margin-top: 25px;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+.login-container .register-link a {
+    color: #b8860b;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.login-container .register-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .login-page {
+        padding: 20px;
+    }
+
+
+    .login-container {
+        padding: 35px 25px;
+    }
+
+
+    .login-container h1 {
+        font-size: 29px;
+    }
+
+}
